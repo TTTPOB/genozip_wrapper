@@ -1,0 +1,19 @@
+[tool.poetry]
+authors = ["tttpob <tpob@tpob.xyz>"]
+description = "a wrapper to genozip, a specialized compressor for bioinformatic data"
+license = "MIT"
+name = "genozip_wrapper"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+click = ">=7"
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+genozip_wrapper = "genozip_wrapper.cli:cli"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
